@@ -1,5 +1,5 @@
 # include<stdio.h>
-int size()
+int input_array_size()
 {
   int a;
   printf("enter the total number of values entered");
@@ -16,22 +16,26 @@ void input(int n,int arr[n])
 }
 int sum( int n,int arr[n])
 {
+  int sum=0;
   for(int i=0;i<n;i++)
     {
-      int sum=0;
-      sum=sum+*arr[i];
+    
+      sum=sum+(int)arr[i];
+  
       
     }
-  return n;
+  return sum;
 }
 void output( int n, int arr[n],int sum)
 {
+ 
   printf("%d",sum);
 }
 int main()
 {
-  int b;
-  int p=size();
+
+  int p=input_array_size();
+  int b[p];
   input(p,b);
   int r=sum(p,b);
   output(p,b,r);
