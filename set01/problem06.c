@@ -26,7 +26,7 @@ int compare(int a, int b, int c, int *largest)
 }
 void output( int a , int b ,int c, int largest)
 {
-  printf("%d is largest number ",largest);
+  printf("%d is the largest number ",largest);
   
 }
 int main()
