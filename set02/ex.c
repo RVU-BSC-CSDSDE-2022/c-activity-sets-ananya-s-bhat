@@ -12,28 +12,27 @@ int input_n()
   }
   return a;
 }
-void input(int n,int a[n])
+int input(int n,int a[])
 {
   printf("enter the numbers");
   for(int i=0;i<n;i++)
     {
       scanf("%d",&a[i]);
     }
+  return a;
 }
-float average(int n,int a[n])
+float average(int n,int a[])
 {
-  float sum=0;
-  int count=0;
+   float avg=0;
   for(int i=0;i<n;i++)
     {
-      if(a[i]%2!=0)
+      if(i%2!=0)
       {
-        sum=a[i]+sum;
-        count++;
+        avg=a[i]+avg;
+        printf("%f",avg);
       }
       
     }
-  float avg=sum/count;
   return avg;
 }
 void output(float avg)
@@ -45,8 +44,7 @@ int main()
   int p;
   float r;
   p=input_n();
-  int q[p];
-  input(p,q);
+  int q[p]=input(p,q);
   r=average(p,q);
   output(r);
   return 0;
