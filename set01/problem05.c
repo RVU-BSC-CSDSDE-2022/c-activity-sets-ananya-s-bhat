@@ -1,9 +1,14 @@
 # include <stdio.h>
+#include <stdlib.h>
 int input()
 {
   int a;
   printf("enter the number");
-  scanf("%d",&a);
+  if(scanf("%d",&a)!=1)
+  {
+    printf("error");
+    exit(0);
+  }
   return a;
   
   
