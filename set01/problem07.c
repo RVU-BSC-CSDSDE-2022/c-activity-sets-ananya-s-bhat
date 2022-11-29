@@ -1,14 +1,19 @@
 # include <stdio.h>
+# include <stdlib.h>
 int input()
 {
  int v;
   printf("enter the numbers");
-    scanf("%d",&v);
+   if( scanf("%d",&v)!=1)
+   {
+     printf("error");
+     exit(0);
+   }
   return v;
 }
 int sum(int n)
 {
-  int ;
+  
  n=(n*(n+1))/2;
   return n;
 
