@@ -1,4 +1,5 @@
 # include <stdio.h>
+# include<stdlib.h>
 int addnum(int *a,int *b, int *sum)
 {
   
@@ -10,9 +11,17 @@ int main()
   int a,b,sum;
   
   printf("enter first num");
-  scanf("%d",&a);
+  if(scanf("%d",&a)!=1)
+  {
+    printf("error");
+    exit(0);
+  }
   printf("enter second num");
-  scanf("%d",&b);
+  if(scanf("%d",&b)!=1)
+  {
+    printf("error");
+    exit(0);
+  }
   addnum(&a,&b, &sum);
   printf("sum is %d", sum);
   return 0;
