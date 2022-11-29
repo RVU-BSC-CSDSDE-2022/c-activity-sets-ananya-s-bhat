@@ -1,12 +1,21 @@
 # include <stdio.h>
+#include <stdlib.h>
 int addnum(int a,int b);
 int main()
 {  
   int a,b;
   printf("enter first num\n");
-  scanf("%d", &a);
+  if(scanf("%d", &a)!=1)
+  {
+    printf("error");
+    exit(0);
+  }
   printf("enter second num\n");
-  scanf("%d", &b);
+  if(scanf("%d", &b)!=1)
+  {
+    printf("error");
+    exit(0);
+  }
   int c;
   c=addnum(a,b);
   
