@@ -1,13 +1,19 @@
 # include<stdio.h>
+# include <stdlib.h>
 int input_array_size()
 {
   int a;
   printf("enter the total number of values entered");
-  scanf("%d",&a);
+  if(scanf("%d",&a)!=1)
+  {
+    printf("error");
+    exit(0);
+  }
   return a;
 }
 void input(int n,int arr[n])
 {
+  printf("enter the values");
   for(int i=0;i<n;i++)
     {
     scanf("%d",&arr[i]);
