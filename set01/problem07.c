@@ -13,16 +13,25 @@ int input()
 }
 int sum(int n)
 {
-  
- n=(n*(n+1))/2;
-  return n;
+   int sum=0;
+  for(int i=1;i<=n;i++)
+    {
+      sum=sum+i;
+    }
+ 
+  return sum;
 
 }
  
 void output(int n, int add)
 {
-  printf("sum of n numbers is%d",add);
+for(int i=1;i<n;i++)
+  {
+    printf("%d +",i);
 }
+  printf("%d = %d",n,add);
+  }
+  
 
  int main()
 {int a=input();
