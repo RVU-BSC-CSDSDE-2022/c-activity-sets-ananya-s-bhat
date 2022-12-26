@@ -13,7 +13,7 @@ float borga(int x)
   float value;
   int k;
   float sum=1+value;
-  for((i=1)&&(j=3)&&(k=1);(value<0.000001)&&(k<j);(i++)&&(j+2))
+  for((i=1)&&(j=3)&&(k=1);((value<0.000001)&&(k<j));(i++)&&(j+2))
     {  
       k
       value=(pow(x,i))/(j);
