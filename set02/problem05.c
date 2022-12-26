@@ -1,19 +1,36 @@
 #include <stdio.h>
-#include <stdlib.h>
-int main ()
+#include <math.h>
+int input()
 {
   int a;
-  float sum=0;
-  printf("enter x");
+  printf("enter the number");
   scanf("%d",&a);
-  for(int i=1;i<a;i++)
-    {
-      if(i%2==0)
-      {
-       sum=200/(i+3); 
-      }
-      sum=200/(i+2);
-      printf("%f",sum);
+  return a;
+}
+float borga(int x)
+{
+  int i,j;
+  float value;
+  int k;
+  float sum=1+value;
+  for((i=1)&&(j=3)&&(k=1);(value<0.000001)&&(k<j);(i++)&&(j+2))
+    {  
+      k
+      value=(pow(x,i))/(j);
+      sum=sum+value;
     }
+  return sum;
+}
+void output(int x, float sum)
+{
+  printf("%f",sum);
+} 
+int main()
+{
+  int a;
+  a=input();
+  float b;
+  b=borga(a);
+  output(a,b);
   return 0;
 }

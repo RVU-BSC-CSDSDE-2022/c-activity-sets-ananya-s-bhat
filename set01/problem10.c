@@ -15,53 +15,25 @@ void input_two_strings(char *string1, char *string2)
 }
 int stringcompare(char *string1, char *string2)
 {
-  char string[100];
-    
-      for(int i=0;string[i]!='\0';i++)
+   int i;
+      for(i=0 ;(((string1[i]!='\0')&&(string2[i]!='\0'))&&(string1[i]==string2[i]));i++)
         {
-          if(string1[i]!='\0'&&string2[i]=='\0')
-          {
-            return 2;
-          }
-          if(string2[i]!='\0'&&string1[i]=='\0')
-          {
-            return 1;
-          }
-          if(string1[i]<string2[i])
-          {
-            return 1;
-            }
           
-          if(string2[i]<string1[i])
-          {
-            return 2;
-          }
-          if(string1[i]==string2[i])
-          {
-            if(string1[i]<string2[i])
-          {
-            return 1;
-            break;
-            }
-          
-          if(string2[i]<string1[i])
-          {
-            return 2;
-            break;
-          }
-          }
         }
-       
+        return 0;
+  return(string1[i]-string2[i]);
+        
+  
 }
 void output(char *string1, char *string2,int result)
 {
-  if(result==1)
+  if(result<0)
   {
     printf("%s is greater than %s\n",string2,string1);
     
     
   }
-  else if(result==2)
+  else if(result>0)
   {
     printf("%s is greater than %s\n",string1,string2);
   }

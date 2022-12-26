@@ -1,9 +1,9 @@
 # include <stdio.h>
 # include<stdlib.h>
-int addnum(int *a,int *b, int *sum)
+int addnum(int a,int b, int *sum)
 {
   
-  *sum= *a+*b;
+  *sum= a+b;
 
 }
 int main()
@@ -22,7 +22,7 @@ int main()
     printf("error");
     exit(0);
   }
-  addnum(&a,&b, &sum);
+  addnum(a,b,&sum);
   printf("sum is %d", sum);
   return 0;
   

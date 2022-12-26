@@ -1,14 +1,16 @@
 #include <stdio.h>
-int add(int x, float y);
+int add(int x, int y);
 int main()
 {
-   int x=9, y=8, sum;
-   sum=add(x,y);
-   return 0;
+      int x=8,y=9, sum=0;
+      sum=x+y;
+      sum= add(x,y);
+      printf("sum is %d", sum);
+      return 0;
 }
-
-int add(int x, int y)
-{
-   int sum=x+y;
-   return sum;
-}    
+   int  add(int x, int y)
+   {
+        int sum=x+y;
+        return sum;
+         
+    }
