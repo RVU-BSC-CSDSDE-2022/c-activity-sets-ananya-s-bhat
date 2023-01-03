@@ -9,15 +9,23 @@ int input()
 }
 float borga(int x)
 {
-  int i,j;
+  float i,j;
   float value;
-  int k;
-  float sum=1+value;
-  for((i=1)&&(j=3)&&(k=1);((value<0.000001)&&(k<j));(i++)&&(j+2))
-    {  
-      k
-      value=(pow(x,i))/(j);
+  float k;
+  float sum=1;
+  i=1;
+  j=3;
+  while(value>0.000001);
+    {
+      for (int m=1;m<=j;m++)
+        {
+          k=k*m;
+        }
+      value=((pow(x,i))/(k));
       sum=sum+value;
+      i++;
+      j+2; 
+      
     }
   return sum;
 }
