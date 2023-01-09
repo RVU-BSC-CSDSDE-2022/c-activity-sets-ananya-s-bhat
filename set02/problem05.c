@@ -9,30 +9,24 @@ int input()
 }
 float borga(int x)
 {
-  float i,j;
-  float value;
-  float k;
+  int i;
+  float value=1;
+  
   float sum=1;
-  i=1;
-  j=3;
-  while(value>0.000001);
+  for(i=2;value>0.000001;i += 2)
     {
-      for (int m=1;m<=j;m++)
-        {
-          k=k*m;
-        }
-      value=((pow(x,i))/(k));
-      sum=sum+value;
-      i++;
-      j+2; 
       
+      value= (x * value)/(i*(i+1));
+      sum = sum+value;
     }
   return sum;
 }
+
 void output(int x, float sum)
 {
   printf("%f",sum);
 } 
+
 int main()
 {
   int a;

@@ -1,4 +1,6 @@
+
 #include <stdio.h>
+#include <string.h>
 void input(char *a)
 {
   printf("enter the string");
@@ -7,11 +9,12 @@ void input(char *a)
 void strr(char *a,char *r)
 {
   int i,j;
-  for(i=0;a[i]!='\0';i++)
+  int k=strlen(a);
+  for((i=0&&j=k);i<=k&&j>=0;i++&&k--)
   {
-    int k=i;
+    r[i]=a[j];
   }
-  r[i]
+  
 }
 void output(char *r)
 {
