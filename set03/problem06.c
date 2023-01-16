@@ -8,11 +8,12 @@ void input(char *a)
 }
 void strr(char *a,char *r)
 {
-  int i,j;
-  int k=strlen(a);
-  for((i=0&&j=k);i<=k&&j>=0;i++&&k--)
+  int i,j,k;
+   k=strlen(a);
+  for(i=0,j=(k-1);i<=k&&j>=0;i++,j--)
   {
-    r[i]=a[j];
+    r[j]=a[i];
+    
   }
   
 }
